@@ -6,7 +6,7 @@ A simple API for Knave 1.0 with a player character randomizer.
 
 See [License](license.txt)
 
-This software is under an MIT license but is built off of Knave 1.0 which is copyrighted with Attribution 4.0 International (CC BY 4.0). If do anything with this software please include the license which includes attribution to the original author of the work this softare is based off of.
+This software is under an MIT license but is built off of Knave 1.0 which is copyrighted with Attribution 4.0 International (CC BY 4.0). If do anything with this software please include the license which includes attribution to the original author of the work this software is based off of.
 
 ## Usage and Development
 
