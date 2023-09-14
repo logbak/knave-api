@@ -10,4 +10,4 @@ This software is under an MIT license but is built off of Knave 1.0 which is cop
 
 ## Usage and Development
 
-At the moment you will need to compile and run the code yourself if you wish to utilize this software. This is meant as a starting point to be used in integrations or potentially as part of standalone application. Future verions may be more accesible.
+At the moment you will need to compile and run the code yourself if you wish to utilize this software. This is meant as a starting point to be used in integrations or potentially as part of standalone application. Future verions may be more accessible.
