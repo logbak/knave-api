@@ -151,6 +151,44 @@ public static class StartingConstants
         { Item.Torch, 1 }
     }.ToImmutableDictionary();
 
+    public static string AlignmentToString(this int value)
+    {
+        if (value >= 1 || value <= 5)
+            return $"Lawful ({value})";
+        if (value >= 6 || value <= 15)
+            return $"Neutral ({value})";
+        if (value >= 16 || value <= 20)
+            return $"Chaos ({value})";
+        else
+            throw new ArgumentOutOfRangeException("Expecte value between 1-20");
+    }
 
+    public static string ArmorToString(this int value)
+    {
+        if (value >= 1 || value <= 3)
+            return $"No armor ({value})";
+        if (value >= 4 || value <= 14)
+            return $"Gambeson ({value})";
+        if (value >= 15 || value <= 19)
+            return $"Brigadine ({value})";
+        if (value >= 19 || value <= 20)
+            return $"Chain ({value})";
+        else
+            throw new ArgumentOutOfRangeException("Expecte value between 1-20");
+    }
+
+    public static string HelmetAndShieldToString(this int value)
+    {
+        if (value >= 1 || value <= 13)
+            return $"None ({value})";
+        if (value >= 14 || value <= 16)
+            return $"Helmet ({value})";
+        if (value >= 17 || value <= 19)
+            return $"Shield ({value})";
+        if (value == 20)
+            return $"Helmet and Shield ({value})";
+        else
+            throw new ArgumentOutOfRangeException("Expecte value between 1-20");
+    }
 
 }

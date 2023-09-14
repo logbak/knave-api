@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using Knave_API.Models;
 using Knave_API.Models.Enums;
 
@@ -20,9 +21,15 @@ public class PlayerCharacter
     public int Charisma { get; set; }
     public Traits Traits { get; set; }
     [Range(1, 20)]
-    public int Alignment { get; set; }
-    public int Armor { get; set; }
-    public int HelmetAndShield { get; set; }
+    [JsonIgnore]
+    public int AlignmentValue { get; set; }
+    public string Alignment => AlignmentValue.AlignmentToString();
+    [JsonIgnore]
+    public int ArmorValue { get; set; }
+    public string Armor => ArmorValue.ArmorToString();
+    [JsonIgnore]
+    public int HelmetAndShieldValue { get; set; }
+    public string HelmetAndShield => HelmetAndShieldValue.HelmetAndShieldToString();
     public List<Item> Inventory { get; set; }
 
 }

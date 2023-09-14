@@ -29,6 +29,9 @@ public class playerCharacterService : IPlayerCharacterService
                 Virtue = (Virtue) RollD20(),
 
             },
+            AlignmentValue = RollD20(),
+            ArmorValue = RollD20(),
+            HelmetAndShieldValue = RollD20(),
             Inventory = new List<Item>()
             {
                 StartingConstants.StartingDungeneeringGear[RollD20()],
