@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using Knave_API.Models;
+using Knave_API.Models.Enums;
 
 namespace Models;
 
@@ -22,6 +23,6 @@ public class PlayerCharacter
     public int Alignment { get; set; }
     public int Armor { get; set; }
     public int HelmetAndShield { get; set; }
-    public List<string> Inventory { get; set; }
+    public List<Item> Inventory { get; set; }
 
 }

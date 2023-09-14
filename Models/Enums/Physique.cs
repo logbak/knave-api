@@ -1,4 +1,4 @@
-namespace Models.Enums;
+namespace Knave_API.Models.Enums;
 
 public enum Physique
 {

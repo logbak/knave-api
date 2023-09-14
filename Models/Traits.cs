@@ -1,5 +1,4 @@
 using Knave_API.Models.Enums;
-using Models.Enums;
 
 namespace Knave_API.Models;
 
